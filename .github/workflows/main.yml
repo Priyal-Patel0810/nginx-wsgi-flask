@@ -27,5 +27,5 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y docker-compose
 
       - name: Deploy containers
-        run: |
-          docker-compose -f docker-compose.yml up -d
+        working-directory: .github\workflows
+        run: docker-compose -f docker-compose.yml up -d

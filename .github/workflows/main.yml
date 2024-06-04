@@ -27,5 +27,5 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y docker-compose
 
       - name: Deploy containers
-        working-directory: C:/Users/patel/nginx-wsgi-flask/github/workflows/main.yml
+        working-directory: /Users/patel/nginx-wsgi-flask/github/workflows
         run: docker-compose -f docker-compose.yml up -d
